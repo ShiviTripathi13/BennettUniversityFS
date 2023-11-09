@@ -9,7 +9,7 @@ function initEvents() {
     // alert("JS Loaded...");
     document.querySelector("#add").addEventListener("click", add);
      document.querySelector("#sub").addEventListener("click", sub);
-     document.querySelector("#multi").addEventListener("click", multi);
+     document.querySelector("#mul").addEventListener("click", multi);
      document.querySelector("#div").addEventListener("click", div);
 }
 
