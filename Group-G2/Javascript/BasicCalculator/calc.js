@@ -8,6 +8,9 @@ window.addEventListener("load", initEvents);
 function initEvents() {
     // alert("JS Loaded...");
     document.querySelector("#add").addEventListener("click", add);
+     document.querySelector("#sub").addEventListener("click", sub);
+     document.querySelector("#multi").addEventListener("click", multi);
+     document.querySelector("#div").addEventListener("click", div);
 }
 
 
@@ -16,5 +19,26 @@ function add() {
     var snum = document.querySelector("#box-2").value;
     // parseInt - type cast into integer
     var result = parseInt(fnum) + parseInt(snum);
+    document.querySelector("#box-3").value = result;
+}
+function sub() {
+    var fnum = document.querySelector("#box-1").value;
+    var snum = document.querySelector("#box-2").value;
+    // parseInt - type cast into integer
+    var result = parseInt(fnum) - parseInt(snum);
+    document.querySelector("#box-3").value = result;
+}
+function multi() {
+    var fnum = document.querySelector("#box-1").value;
+    var snum = document.querySelector("#box-2").value;
+    // parseInt - type cast into integer
+    var result = parseInt(fnum) * parseInt(snum);
+    document.querySelector("#box-3").value = result;
+}
+function div() {
+    var fnum = document.querySelector("#box-1").value;
+    var snum = document.querySelector("#box-2").value;
+    // parseInt - type cast into integer
+    var result = parseInt(fnum) / parseInt(snum);
     document.querySelector("#box-3").value = result;
 }
